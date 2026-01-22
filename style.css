@@ -10,7 +10,7 @@
     width: 100%;
     height: 120vh;
     border: 1px solid;
-    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(imges/background_effect.png);
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(imges/background_effect.png);
     background-position: center;
     display: flex;
     flex-direction: column;
@@ -29,6 +29,10 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
+     background-color: rgba(255, 255, 255, 0.073);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 20px;
 }
 nav > img{
     border-radius: 50%;
@@ -58,7 +62,7 @@ ul > li > a{
 
 }
 ul > li > a:hover{
-    color: rgb(176, 9, 65);
+    color: rgb(210, 128, 5);
     transform: scale(1.10);
 }
 #dark_light_input{
@@ -73,41 +77,81 @@ ul > li > a:hover{
 #dark_light_input:checked + .dark_light_label > .light_img{
     display: block;
 }
+@keyframes circle {
+  0% {
+    background-position: center -10px;
+  }
+  25%{
+    background-position: center 0px;
+  }
+  50% {
+    background-position: center 10px;
+  }
+  100% {
+    background-position: center 10px;
+  }
+}
 .hero_description{
     width: 100%;
     height: 100vh;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url(imges/background_circle.png);
+    background-position:center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    animation: circle 6s  ease infinite
 }
 .my_description{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     width: 50%;
     height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .my_description > h1 {
     color: white;
     font-size: 350%;
+}
+.my_description > h1 > span{
+    color: orange;
+}
+.my_description > strong{
+    font-size: 200%;
+    color: rgb(212, 11, 78);
 }
 .my_description > p{
     color: white;
     width: 90%;
     text-align: center;
     font-size: 150%;
+    word-spacing: 4px;
 }
 .hero_description  > .my_pic{
     width: 50%;
     height: 50vh;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+.hero_description  > .my_pic > span{
+    color: lightgreen;
+    backdrop-filter: blur(5px);
+    background-color:  rgba(94, 143, 110, 0.5);
+    padding: 10px 20px;
+    border-radius: 50px;
+    position: absolute;
+    right: 50px;
+    transform: rotate(-45deg);
+
 }
 .me{
-    width: 25rem;
+    width: 50%;
     border-radius: 50%;
 }
