@@ -78,18 +78,15 @@ ul > li > a:hover{
     display: block;
 }
 @keyframes circle {
-  0% {
-    background-position: center -10px;
-  }
-  25%{
-    background-position: center 0px;
-  }
-  50% {
-    background-position: center 10px;
-  }
-  100% {
-    background-position: center 10px;
-  }
+    0%{
+        background-position: center 0px;
+    }
+    25%{
+        background-position: center 40px;
+    }
+    100%{
+        background-position: center 0px;
+    }
 }
 .hero_description{
     width: 100%;
@@ -102,7 +99,7 @@ ul > li > a:hover{
     background-position:center;
     background-size: 40%;
     background-repeat: no-repeat;
-    animation: circle 6s  ease infinite
+    animation: circle 5s  ease infinite
 }
 .my_description{
     /* border: 1px solid white; */
@@ -147,8 +144,7 @@ ul > li > a:hover{
     padding: 10px 20px;
     border-radius: 50px;
     position: absolute;
-    right: 50px;
-    transform: rotate(-45deg);
+    bottom: 0;
 
 }
 .me{
