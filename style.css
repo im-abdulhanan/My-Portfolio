@@ -1,5 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+@keyframes circle {
+    0%{
+        background-position: center 0px;
+    }
+    25%{
+        background-position: center 40px;
+    }
+    100%{
+        background-position: center 0px;
+    }
+}
+@keyframes textColor {
+   0%{
+    color: rgb(197, 117, 221);
+   }
+   25%{
+    color: rgb(224, 66, 119);
+   }
+   50%{
+    color: rgb(171, 231, 59);
+   }
+   75%{
+    color: rgb(224, 66, 119);
+   }
+   100%{
+    color: rgb(197, 117, 221);
+   }
+}
 *{
     padding: 0;
     margin: 0;
@@ -8,9 +35,10 @@
 }
 .hero_section{
     width: 100%;
-    height: 120vh;
+    height: 115vh;
     border: 1px solid;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(imges/background_effect.png);
+    background-color: rgb(28, 28, 28);
+    /* background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(imges/background_effect.png); */
     background-position: center;
     display: flex;
     flex-direction: column;
@@ -24,15 +52,13 @@ header{
 nav{
     width: 50%;
     height: 8vh;
-    border: 1px solid gray;
+    border: 1px solid rgb(99, 97, 97);
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: space-around;
      background-color: rgba(255, 255, 255, 0.073);
-    backdrop-filter: blur(10px);
-    position: fixed;
-    top: 20px;
+    backdrop-filter: blur(100px);
 }
 nav > img{
     border-radius: 50%;
@@ -77,96 +103,52 @@ ul > li > a:hover{
 #dark_light_input:checked + .dark_light_label > .light_img{
     display: block;
 }
-@keyframes circle {
-    0%{
-        background-position: center 0px;
-    }
-    25%{
-        background-position: center 40px;
-    }
-    100%{
-        background-position: center 0px;
-    }
-}
 .hero_description{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     border: 1px solid orange;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    background-image: url(imges/background_circle.png);
-    background-position:center;
-    background-size: 40%;
-    background-repeat: no-repeat;
     animation: circle 5s  ease infinite
 }
 .my_description{
     border: 1px solid white;
-    width: 100%;
-    height: 100vh;
+    width: 50%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
 }
-.my_description > h1 {
-    color: white;
-    font-size: 1000%;
-    position: absolute;
-    top: 30px;
-    width: 100%;
+.my_description h1{
+    font-size: 700%;
     text-align: center;
-    /* z-index: ; */
+    color: #fabf29;
 }
-.my_description > h1 > span{
-    color: orange;
+.my_description h1 span{
+        animation: textColor 10s ease infinite;
+
+
 }
-.my_description > strong{
+.my_description strong{
+    font-size: 250%;
+    color: #f54e26;
+}
+.my_description p{
+    width: 80%;
     font-size: 200%;
-    color: rgb(212, 11, 78);
+    text-align: justify;
+    color:#fff6e8;
 }
-.my_description > p{
-    color: white;
-    width: 90%;
-    text-align: center;
-    font-size: 150%;
-    word-spacing: 4px;
-}
-.hero_description  > .my_pic{
+.pic_box{
     width: 50%;
-    height: 50vh;
-    border: 1px solid white;
+    height: 70%;
+    border: 1px solid purple;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
 }
-.hero_description  > .my_pic > span{
-    color: lightgreen;
-    backdrop-filter: blur(5px);
-    background-color:  rgba(94, 143, 110, 0.5);
-    padding: 10px 20px;
-    border-radius: 50px;
-    position: absolute;
-    bottom: 0;
-
-}
-@keyframes aa {
-    0%{
-        transform: scale(-.0001);
-        transition: 1s ease all;
-    }
-    100%{
-        transform: scale(1);
-        transition: 1s ease all;
-    }
-}
-.me{
-    width: 40%;
-    animation: aa 2s ease ;
-    z-index: 1;
-    /* transition: 5s ease all; */
-    /* border-radius: 50%; */
+.pic_box img{
+    width: 70%;
 }

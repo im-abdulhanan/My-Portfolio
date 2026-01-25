@@ -1,0 +1,13 @@
+@media screen and (max-width:499px) {
+
+    
+    .hero_description{
+        flex-direction: column;
+    }
+    .my_description h1{
+        font-size: 200%;
+    }
+    .my_description p{
+    font-size: 100%;
+ }   
+}
