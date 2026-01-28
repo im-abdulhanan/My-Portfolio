@@ -1,12 +1,21 @@
 let body = document.body;
-let heroSection = document.getElementById("hero");
-let toggle = document.getElementById("dark")
-let url = "linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(imges/background_effect.png);"
-toggle.addEventListener("click",function (){
-    body.classList.toggle("dark")
-    if(toggle.classList.contains("dark")){
-        heroSection.style.background = "white"
+let btn = document.getElementById("dark-mode");
+let li_a = document.getElementById("li_a");
+let para = document.getElementById("para");
+btn.style.cursor = "pointer"
+btn.addEventListener("click",()=>{
+     if(body.classList.contains("dark")){
+        body.classList.add("white")
+        body.classList.remove("dark")
+        btn.src = "icons/night-mode.png"
+        li_a.style.color = "black"
+        para.style.color = "black"
     }else{
-        heroSection.style.background = "linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(imges/background_effect.png);"
+        body.classList.add("dark")
+        body.classList.remove("white")
+        // body.style.backgroundColor = "rgb(28, 28, 28)"
+        btn.src = "icons/sun_light.png"
+        li_a.style.color = "white"
+        para.style.color = "white"
     }
 })
