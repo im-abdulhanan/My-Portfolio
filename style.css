@@ -91,9 +91,11 @@ li{
 }
 
 ul > li > a{
-    color:#fff6e8bd;
+    color: gray;
     text-decoration: none;
     font-size: 150%;
+    font-weight: 800;
+    letter-spacing: 1px;
 
 }
 ul > li > a:hover{
@@ -147,10 +149,11 @@ ul > li > a:hover{
     color: #f54e26;
 }
 .my_description p{
-    width: 90%;
+    width: 75.5%;
     font-size: 200%;
     text-align: justify;
-    color:#fff6e8;
+    color: gray;
+    word-spacing: 3px;
 }
 .pic_box{
     width: 40%;

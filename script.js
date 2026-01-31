@@ -8,14 +8,14 @@ btn.addEventListener("click",()=>{
         body.classList.add("white")
         body.classList.remove("dark")
         btn.src = "icons/night-mode.png"
-        li_a.style.color = "black"
-        para.style.color = "black"
+        // li_a.style.color = "black"
+        // para.style.color = "black"
     }else{
         body.classList.add("dark")
         body.classList.remove("white")
         // body.style.backgroundColor = "rgb(28, 28, 28)"
         btn.src = "icons/sun_light.png"
-        li_a.style.color = "white"
-        para.style.color = "white"
+        // li_a.style.color = "white"
+        // para.style.color = "white"
     }
 })
