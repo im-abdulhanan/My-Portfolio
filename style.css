@@ -54,7 +54,7 @@
     justify-content: end;
 }
 header{
-    width: 200%;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
