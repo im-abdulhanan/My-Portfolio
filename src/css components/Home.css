@@ -1,0 +1,15 @@
+@keyframes greenlight {
+  0% {
+    background-color: rgba(0, 255, 0, 1);
+  }
+  50% {
+    background-color: rgba(0, 255, 0, 0.4);
+  }
+  100% {
+    background-color: rgba(0, 255, 0, 1);
+  }
+}
+
+.green-small {
+  animation: greenlight 2s infinite;
+}
