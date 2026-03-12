@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import "../css components/Header.css"
 
 export const Header = () => {
   const [active, setActive] = useState("Home")
@@ -10,7 +11,7 @@ export const Header = () => {
           <li key={item}
           onClick={()=> setActive(item)
           }
-          className={`py-2 px-4 rounded-3xl cursor-pointer ${
+          className={`header-li py-2 px-4 rounded-3xl cursor-pointer ${
               active === item
                 ? "bg-white text-black"          // active styling
                 : "hover:bg-white/10 hover:backdrop-blur-lg text-white" // default/hover styling

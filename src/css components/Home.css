@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @keyframes greenlight {
   0% {
     background-color: rgba(0, 255, 0, 1);
@@ -12,4 +13,12 @@
 
 .green-small {
   animation: greenlight 2s infinite;
+}
+.coder-heading{
+  font-family: "Bebas Neue";
+}
+.x-span{
+  background: linear-gradient(to right, rgb(231, 28, 28), rgb(42, 42, 228));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
