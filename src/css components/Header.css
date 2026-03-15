@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+*{
+    font-family: "Share Tech";
+}
+.ah-heading{
+    font-family: "Bungee";
+}
