@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
 *{
     font-family: "Share Tech";
+    
 }
 .ah-heading{
     font-family: "Bungee";
 }
+.largeDevice-header{
+    background-color: rgb(10, 10, 10);}
