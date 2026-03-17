@@ -24,7 +24,7 @@ export const Header = () => {
       </div>
 
       {/* For Small Devices */}
-      <div className="h-20">
+      <div className="h-20 largeDevice-header">
           <div className="flex justify-between px-5 items-center h-20 bg-black sm:hidden fixed w-full z-50">
             <h1 className="text-white text-3xl ah-heading">AH</h1>
             <h3 onClick={()=>setOpen(!open)} className="text-3xl">{open ? <IoMdClose className="text-white cursor-pointer" />  : <FiAlignJustify className="text-white cursor-pointer"/>}</h3 >
