@@ -7,6 +7,10 @@
     font-family: summary;
     src: url(../font-components/Fonts/Poppins/Poppins-Medium.ttf);
 }
+@font-face {
+    font-family: teach;
+    src: url(../font-components/Fonts/BBH_Bartle/BBHBartle-Regular.ttf);
+}
 
 
 
@@ -37,10 +41,19 @@
         left: 0%;
     }
 }
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 .my-name{
-    background: linear-gradient(to right, rgb(227, 50, 250), rgb(184, 133, 4));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+background: linear-gradient(270deg, #c25609, #f23393, #7e4cf3);
+background-size: 400% 400%;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+animation: gradientShift 5s ease infinite;
 }
 
 .summary{
@@ -51,7 +64,7 @@
         background-color: rgba(14, 93, 14, 0.3);
     }
     50%{
-        background-color: green;
+        background-color: rgb(9, 228, 9);
     }
     100%{
         background-color: rgba(14, 93, 14, 0.3);
@@ -60,4 +73,84 @@
 }
 .green-div{
     animation: green 2s ease infinite;
+}
+.autoScroll{
+    animation: Scroll 5s ease ;
+    animation-timeline: view();
+}
+@keyframes Scroll {
+    0%{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+
+}
+/* .icon{
+    font-size: 20px;
+} */
+.html{
+    font-size: 50px;
+    color: rgba(255, 68, 0, 0.792);
+}
+.css{
+    color: rgb(68, 99, 223);
+    font-size: 50px;
+}
+.boot{
+    color: rgb(229, 7, 229);
+    font-size: 50px;
+}
+.js{
+    color: yellow;
+    font-size: 50px;
+}
+.tailwind{
+    color: aqua;
+    font-size: 50px;
+}
+.react{
+    color: aqua;
+    font-size: 50px;
+}
+.git{
+    color: orangered;
+    font-size: 50px;
+}
+.github{
+    font-size: 50px;
+    
+}
+.py{
+    font-size: 50px;
+}
+.sql{
+    font-size: 50px;
+}
+.linux{
+    font-size: 50px;
+}
+.vs-code{
+    font-size: 50px;
+    color: rgb(10, 141, 174);
+}
+.vercel{
+    font-size: 50px;
+    color: black;
+}
+.teach-div .teach-title{
+    font-family: h1;
+}
+.icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    color: lightgray;
+}
+.icon:hover{
+    background-color: rgba(128, 128, 128, 0.5);
 }
