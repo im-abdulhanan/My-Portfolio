@@ -1,6 +1,7 @@
 import { Header } from "./Header"
 import "../css components/Home.css"
 import { useRef, useState } from "react";
+import { FaTelegramPlane } from "react-icons/fa";
 export const Home = () => {
   // const animationNames = ["cute","animated","fast","smooth","modren"];
   const nameChanger =  useRef(null)
@@ -27,25 +28,24 @@ export const Home = () => {
   return (
     <div className="w-full h-screen ">
          <Header />
-         <div className="mainDiv h-[200vh]">
-          <div className="w-full h-screen flex flex-col sm:flex-row ">
-            <div className="my-description w-full sm:w-[60%]  h-[80vh]">
-              <div className="w-full h-[80vh] pl-10 flex flex-col gap-5 pt-20 sm:pt-0">
+        <div className="mainDiv h-[200vh] flex flex-col">
+          <div className="w-full h-[60vh]  flex flex-col items-center gap-5">
+              <div className=" w-full   sm:w-[60%] h-[80vh] pl-10 flex flex-col sm: gap-5 pt-20 sm:pt-0">
                 <h1 className="text-[350%] sm:text-[400%] font-semibold  name text-gray-600">Hola! i'm <span className="name my-name">ABDUL HANAN</span></h1>
-                <h2 className="sm:text-[250%] text-[150%]  text-gray-400">I make your website<span ref={nameChanger}  className="animation relative pl-2">test</span></h2>
-                <p className="text-[150%] summary text-gray-400 w-[100%]">
+                <div className="flex items-center"><h2 className="sm:text-[250%] text-[150%] text-gray-400">I make your website</h2>
+                <span ref={nameChanger} className="animation relative pl-2 text-gray-400 text-[150%] sm:text-[250%]">test</span></div>
+                <p className="text-[150%] summary text-gray-400 w-full sm:w-[90%]">
                   Creative web developer specializing in fast, clean, and high-converting websites that turn visitors into customers.
                 </p>
               </div>
-            <div className="my-pic w-full sm:hidden sm:w-[40%] h-[40vh] flex justify-center items-end">
-              <img src="src/assets/me.png" alt="" className="w-[65%] " />
-            </div>{/*img div*/}
-            </div>
-            <div className="hidden my-pic w-full sm:w-[40%] sm:flex h-[70vh] justify-center items-start">
-              <img src="src/assets/me.png" alt="" className="w-3/4 " />
-            </div>
+              <a href="mailto:imhanan.mail@gmail.com">
+              <button  className="text-amber-50 flex items-center cursor-pointer border px-10 py-2 gap-2 btn-connect hover:bg-white hover:text-black">Let's Connect <FaTelegramPlane /></button>
+              </a>
+              <p className="flex items-center gap-2 text-white"><div className="w-[15px] h-[15px] bg-green-500 rounded-4xl green-div"></div>Available for work</p>
           </div>
-         </div>
+          <div className="bg-amber-100 w-full h-[70vh]">
+          </div>
+        </div>
     </div>
   )
 }
