@@ -18,8 +18,8 @@ import { IoLogoVercel } from "react-icons/io5";
 
 export const TechSection = () => {
   return (
-    <div className="w-full h-[100vh] sm:h-[80vh] TechMainDiv flex items-center ">
-        <div className="w-full h-[90vh] sm:h-[60vh]  flex flex-col items-center justify-center   ">
+    <div className="w-full h-[80vh] sm:h-[80vh] TechMainDiv flex items-center ">
+        <div className="w-full h-[60vh] sm:h-[60vh]  flex flex-col items-center justify-center   ">
             <div className="teach-div">
               <h1 className="teach-title text-[300%] sm:text-[500%] text-white/80">Tech Stack</h1>
             </div>

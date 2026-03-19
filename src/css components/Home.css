@@ -74,6 +74,9 @@ animation: gradientShift 5s ease infinite;
 .green-div{
     animation: green 2s ease infinite;
 }
+.btn-connect{
+     cursor: url('/Hand.png'),auto;
+}
 .autoScroll{
     animation: Scroll 5s ease ;
     animation-timeline: view();

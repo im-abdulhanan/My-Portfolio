@@ -40,7 +40,7 @@ export const Home = () => {
                     Creative web developer specializing in fast, clean, and high-converting websites that turn visitors into customers.
                   </p>
                   <a href="mailto:imhanan.mail@gmail.com" className="flex self-center">
-                    <button  className=" text-amber-50 flex items-center cursor-pointer border px-10 py-2 gap-2 btn-connect hover:bg-white hover:text-black">Let's Connect <FaTelegramPlane /></button>
+                    <button  className=" text-amber-50 flex items-center  border px-10 py-2 gap-2 btn-connect hover:bg-white hover:text-black">Let's Connect <FaTelegramPlane /></button>
                    </a>
                   <p className="flex items-center gap-2 self-center text-white"><div className="w-[12px] h-[12px] bg-green-500 rounded-4xl green-div"></div>Available for work !</p>
               </div>
