@@ -22,7 +22,6 @@ export const Header = () => {
         </ul>
         </div>
       </div>
-
       {/* For Small Devices */}
       <div className="h-20 largeDevice-header">
           <div className="flex justify-between px-5 items-center h-20 bg-black sm:hidden fixed w-full z-50">
@@ -41,7 +40,6 @@ export const Header = () => {
               </ul>
           </div>
       </div>
-
     </nav>
   )
 }
