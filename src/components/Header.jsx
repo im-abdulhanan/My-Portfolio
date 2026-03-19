@@ -10,7 +10,7 @@ export const Header = () => {
     <nav className="">
       {/* For large devices */}
       <div className="hidden sm:flex w-full h-12 largeDevice-header">
-        <div className="w-full  flex items-center justify-center  fixed top-10 ">
+        <div className="w-full  flex items-center justify-center  fixed top-10 z-50">
            <ul className="hidden sm:flex justify-around items-center sm:w-2/3 md:2/3  lg:w-1/3 h-15  rounded-4xl border border-white/20 backdrop-blur-3xl">
             {menuNames.map((item)=>(
             <li key={item} className={`sm:px-4 sm:py-2 px-6 py-2 rounded-4xl

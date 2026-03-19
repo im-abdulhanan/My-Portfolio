@@ -3,6 +3,7 @@ import "../css components/TechSection.css"
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaJsSquare } from "react-icons/fa";
+import { BsTypescript } from "react-icons/bs";
 import { FaBootstrap } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaReact } from "react-icons/fa";
@@ -18,7 +19,7 @@ import { IoLogoVercel } from "react-icons/io5";
 
 export const TechSection = () => {
   return (
-    <div className="w-full h-[80vh] sm:h-[80vh] TechMainDiv flex items-center ">
+    <div className="w-full h-[105vh] sm:h-[80vh] TechMainDiv flex items-center ">
         <div className="w-full h-[60vh] sm:h-[60vh]  flex flex-col items-center justify-center   ">
             <div className="teach-div">
               <h1 className="teach-title text-[300%] sm:text-[500%] text-white/80">Tech Stack</h1>
@@ -29,6 +30,7 @@ export const TechSection = () => {
                 <li className="icon"><FaCss3Alt className="css " />CSS</li>
                 <li className="icon"><FaBootstrap className="boot " />Bootstrap</li>
                 <li className="icon"><FaJsSquare className="js " />JavaScript</li>
+                <li className="icon"><BsTypescript className="ts " />TypeScript</li>
                 <li className="icon"><RiTailwindCssFill className="tailwind " />Tailwind CSS</li>
                 <li className="icon"><FaReact className="react " />React</li>
                 <li className="icon"><FaGitAlt className="git " />Git</li>
