@@ -1,3 +1,16 @@
-.Projects-main-Div{
+@font-face {
+    font-family: h1;
+    src: url(../font-components/Fonts/Poppins/Poppins-ExtraBold.ttf)
+}.Projects-main-Div{
      background-color: rgb(20, 20, 20);
+}
+
+
+.Project-title{
+     font-family: h1;
+}
+.project-card{
+      background-color: rgba(128, 128, 128, 0.2);
+      border-radius: 10px;
+      color: lightgray;
 }
