@@ -7,7 +7,7 @@ import { Education } from "./components/Education"
 export const App = () => {
   return (
     <div className="">
-       <Header />
+      <Header />
       <Home/>
       <TechSection/>
       <Projects/>

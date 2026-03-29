@@ -1,0 +1,7 @@
+@font-face {
+    font-family: h1;
+    src: url(../font-components/Fonts/Poppins/Poppins-ExtraBold.ttf)
+}
+.edu-title{
+    font-family: h1;
+}

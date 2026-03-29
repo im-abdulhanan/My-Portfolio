@@ -23,7 +23,7 @@ export const Projects = () => {
           ))}
         </div>
         <a href="https://www.github.com/im-abdulhanan">
-        <button className="border border-amber-50 flex items-center text-white px-5 py-1 gap-1 view-more">View more Projects <FaGithub className="text-white"/></button>
+        <button className="border border-amber-50 flex items-center text-white px-5 py-1 gap-1 view-more hover:bg-white hover:text-black">View more Projects <FaGithub/></button>
         </a>
     </div>
   )
