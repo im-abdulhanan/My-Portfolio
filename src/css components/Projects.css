@@ -1,7 +1,12 @@
 @font-face {
     font-family: h1;
     src: url(../font-components/Fonts/Poppins/Poppins-ExtraBold.ttf)
-}.Projects-main-Div{
+}
+@font-face {
+    font-family: summary;
+    src: url(../font-components/Fonts/Poppins/Poppins-Bold.ttf);
+}
+.Projects-main-Div{
      background-color: rgb(20, 20, 20);
 }
 
@@ -9,8 +14,27 @@
 .Project-title{
      font-family: h1;
 }
+.item-title{
+     font-family: summary;
+     background-color: rgba(128, 128, 128, 0.5);
+     border-radius: 10px;
+}
 .project-card{
-      background-color: rgba(128, 128, 128, 0.2);
+      background-color: rgba(128, 128, 128, 0.1);
       border-radius: 10px;
       color: lightgray;
+}
+.skill{
+     background-color: rgba(128, 128, 128, 0.5);
+}
+.live{
+     background-color: rgba(128, 128, 128, 0.5);
+     padding: 2px 10px;
+}
+.live:hover{
+     background-color: rgba(128, 128, 128, 0.9);
+     cursor: url('/Hand.png'),auto; 
+}
+.view-more{
+     cursor: url('/Hand.png'),auto; 
 }
