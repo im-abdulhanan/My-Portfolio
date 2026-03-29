@@ -4,6 +4,7 @@ import "./App.css"
 import { TechSection } from "./components/TechSection"
 import { Projects } from "./components/Projects"
 import { Education } from "./components/Education"
+import { Contact } from "./components/Contact"
 export const App = () => {
   return (
     <div className="">
@@ -12,6 +13,7 @@ export const App = () => {
       <TechSection/>
       <Projects/>
       <Education/>
+      <Contact/>
     </div>
   )
 }

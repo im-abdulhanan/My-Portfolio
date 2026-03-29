@@ -7,7 +7,7 @@ export const Projects = () => {
       <div className="project-div">
           <h1 className="Project-title text-white/70 text-[300%] sm:text-[500%]">Projects</h1>
       </div>
-        <div className="w-[full] sm:w-[45%] h-[100%]  flex flex-wrap justify-around items-center gap-y-5">
+      <div className="w-[full] sm:w-[45%] h-[100%]  flex flex-wrap justify-around items-center gap-y-5">
           {projectDetails.map((item)=>(
             <div key={item} className="project-card w-[300px] h-[350px] p-5 flex flex-col items-center justify-around">
               <img src={item.img} alt="" className="rounded-[10px]" />
@@ -21,9 +21,9 @@ export const Projects = () => {
               <a href={item.livePre} className="live">Live Preview</a>
             </div>
           ))}
-        </div>
+      </div>
         <a href="https://www.github.com/im-abdulhanan">
-        <button className="border border-amber-50 flex items-center text-white px-5 py-1 gap-1 view-more hover:bg-white hover:text-black">View more Projects <FaGithub/></button>
+        <button className="border border-amber-50 flex items-center text-white px-6 py-2 gap-1 view-more hover:bg-white hover:text-black">View more Projects <FaGithub/></button>
         </a>
     </div>
   )

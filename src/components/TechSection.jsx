@@ -19,30 +19,28 @@ import { IoLogoVercel } from "react-icons/io5";
 
 export const TechSection = () => {
   return (
-    <div className="w-full h-[105vh] sm:h-[100vh] TechMainDiv flex items-center ">
-        <div className="w-full h-[60vh] sm:h-[30vh] md:h-[30vh]   flex flex-col items-center justify-center   ">
-            <div className="teach-div">
-              <h1 className="teach-title text-[300%] sm:text-[500%] text-white/80">Tech Stack</h1>
-            </div>
-            <div className="w-[80%] sm:w-[50%] h-[50vh]  ">
-              <ul className="flex flex-wrap gap-4 justify-center ">
-                <li className="icon"><FaHtml5 className="html " />HTML</li>
-                <li className="icon"><FaCss3Alt className="css " />CSS</li>
-                <li className="icon"><FaBootstrap className="boot " />Bootstrap</li>
-                <li className="icon"><FaJsSquare className="js " />JavaScript</li>
-                <li className="icon"><BsTypescript className="ts " />TypeScript</li>
-                <li className="icon"><RiTailwindCssFill className="tailwind " />Tailwind CSS</li>
-                <li className="icon"><FaReact className="react " />React</li>
-                <li className="icon"><FaGitAlt className="git " />Git</li>
-                <li className="icon"><FaGithub className="github " />GitHub</li>
-                <li className="icon"><FaPython className="py " />Python</li>
-                <li className="icon"><SiMysql className="sql " /></li>
-                <li className="icon"><FcLinux className="linux " />Linux</li>
-                <li className="icon"><VscVscode className="vs-code " />VS code</li>
-                <li className="icon"><IoLogoVercel className="vercel " />Vercel</li>
-              </ul>
-            </div>
-        </div>
+    <div className="w-full h-[105vh] sm:h-[100vh] TechMainDiv flex flex-col">
+      <div className="teach-div w-full h-[20vh] flex items-center justify-center ">
+        <h1 className="teach-title text-[300%] sm:text-[500%] text-white/80">Tech Stack</h1>
+      </div>
+      <div className="w-[100%] sm:w-[100%] h-[50vh] flex flex-col items-center justify-center">
+        <ul className="w-2/2 sm:w-1/2 flex flex-wrap gap-4 justify-center items-center ">
+            <li className="icon"><FaHtml5 className="html " />HTML</li>
+            <li className="icon"><FaCss3Alt className="css " />CSS</li>
+            <li className="icon"><FaBootstrap className="boot " />Bootstrap</li>
+            <li className="icon"><FaJsSquare className="js " />JavaScript</li>
+            <li className="icon"><BsTypescript className="ts " />TypeScript</li>
+            <li className="icon"><RiTailwindCssFill className="tailwind " />Tailwind CSS</li>
+            <li className="icon"><FaReact className="react " />React</li>
+            <li className="icon"><FaGitAlt className="git " />Git</li>
+            <li className="icon"><FaGithub className="github " />GitHub</li>
+            <li className="icon"><FaPython className="py " />Python</li>
+            <li className="icon"><SiMysql className="sql " />MySQL</li>
+            <li className="icon"><FcLinux className="linux " />Linux</li>
+            <li className="icon"><VscVscode className="vs-code " />VS code</li>
+            <li className="icon"><IoLogoVercel className="vercel " />Vercel</li>
+          </ul>
+      </div>
     </div>
   )
 }

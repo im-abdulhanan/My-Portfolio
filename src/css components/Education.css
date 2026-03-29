@@ -2,6 +2,16 @@
     font-family: h1;
     src: url(../font-components/Fonts/Poppins/Poppins-ExtraBold.ttf)
 }
+@font-face {
+    font-family: poppin;
+    src: url(../font-components/Fonts/Poppins/Poppins-Medium.ttf);
+}
 .edu-title{
     font-family: h1;
+}
+.font{
+    font-family: poppin;
+}
+.edu-line{
+    
 }

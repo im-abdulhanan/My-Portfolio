@@ -1,0 +1,20 @@
+@font-face {
+    font-family: h1;
+    src: url(../font-components/Fonts/Poppins/Poppins-ExtraBold.ttf)
+}
+@font-face {
+    font-family: title;
+    src: url(../font-components/Fonts/Poppins/Poppins-Bold.ttf)
+}
+.contact-sec{
+    background-color: rgb(20, 20, 20);
+}
+.touch-title{
+    font-family: h1;
+}
+.contact-us-title{
+    font-family: title;
+}
+.p{
+    font-size: 20px;
+}
