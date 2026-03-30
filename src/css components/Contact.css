@@ -18,3 +18,17 @@
 .p{
     font-size: 20px;
 }
+.input::placeholder{
+    color: rgba(255, 255, 255, 0.33);
+}
+.input:focus{
+    outline: 1px solid  rgba(255, 255, 255, 0.5);
+}
+input{
+    color: white;
+    
+}
+.submit{
+    background: linear-gradient(to right, rgb(126, 59, 4),rgb(149, 51, 110));
+
+}
