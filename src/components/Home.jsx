@@ -32,7 +32,7 @@ export const Home = () => {
       
         <div className="mainDiv h-[135vh] sm:h-[120vh] flex flex-col items-center justify-between">
               <div className=" w-full sm:w-[90%] md:w-[70%] h-[80vh] pl-10 flex flex-col gap-5 sm:gap-5 sm:pt-0">
-                  <img src="src/assets/me.png" width={200} alt="" className="sm:self-center " />
+                  <img src="/me.png" width={200} alt="" className="sm:self-center " />
                   <h1 className="text-[350%] sm:text-[400%] font-semibold  name text-gray-500">Hola! i'm <span className="name my-name">ABDUL HANAN</span></h1>
                   <div className="flex items-center"><h2 className="sm:text-[250%] text-[150%] text-gray-400">I make your website</h2>
                   <span ref={nameChanger} className="animation relative pl-2 text-gray-400 text-[150%] sm:text-[250%]">test</span></div>
