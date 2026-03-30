@@ -45,7 +45,7 @@ export const Home = () => {
                   <p className="flex items-center gap-2 self-center text-white"><div className="w-[12px] h-[12px] bg-green-500 rounded-4xl green-div"></div>Available for work !</p>
               </div>
               <div className="">
-                <img src="src/assets/spac.png" width={200} alt="" className="autoScroll"/>
+                <img src="/spac.png" width={200} alt="" className="autoScroll"/>
               </div>
         </div>
     </div>
